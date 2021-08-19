@@ -18,18 +18,18 @@ enum trabajos {
 }
 
 @Entity
-@Table(name = "TRABAJADOR")
+@Table(name = "trabajador")
 public class Trabajador {
 	
 	// Atributos del trabajador
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	@Column(name="NOMBRE")
+	@Column(name="nombre")
 	private java.lang.String nombre;
-	@Column(name = "TRABAJO")
+	@Column(name = "trabajo")
 	private trabajos trabajo;
-	@Column(name = "SALARIO")
+	@Column(name = "salario")
 	private int salario;
 	
 	// Constructores
